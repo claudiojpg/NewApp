@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <br><br>
+  <ion-button expand="full" routerLink="/login">Iniciar Sesión</ion-button>
+  <br>
+  <ion-button expand="full" routerLink="/registro">Registrarse</ion-button>
+
+
+
+  
+  <ion-label *ngIf="email" style="text-align: center;"><h1>Hola {{ email }}</h1></ion-label> 
+</ion-content>
+<br>
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/modulo1"></ion-back-button>
+      <ion-button [routerLink]="'/modulo1'">
+        <ion-icon name="arrow-back"></ion-icon>
+        <ion-text>Volver</ion-text>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
+
+
+
+
+

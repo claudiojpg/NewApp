@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>welcome</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+    <ion-label style="text-align: center;">
+      <h1>Bienvenido, {{ ultimoUsuarioRegistrado?.correo }}</h1>
+    </ion-label>
+  </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/modulo1"></ion-back-button>
+      <ion-button [routerLink]="'/modulo1'">
+        <ion-icon name="arrow-back"> </ion-icon>
+        <ion-text>Volver</ion-text>
+      </ion-button>
+    </ion-buttons>
+    <ion-footer>
+      <ion-toolbar>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <span style="font-size: 12px; font-style: italic;">Developed by DrCV &reg;</span>
+          <span style="font-size: 10px; font-weight: bold;">© 2023</span>
+        </div>
+      </ion-toolbar>
+    </ion-footer>
+  </ion-toolbar>
+</ion-footer>

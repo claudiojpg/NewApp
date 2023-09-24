@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form [formGroup]="inicioSesionForm">
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Correo Electrónico</ion-label>
+        <ion-input formControlName="correo" type="email" placeholder="formato@correo.com"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input formControlName="contraseña" type="password" placeholder="****"></ion-input>
+      </ion-item>
+    </ion-list>
+  </form>
+  
+  <ion-button (click)="iniciarSesion()" expand="full" color="primary">Iniciar Sesión</ion-button>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/modulo1"></ion-back-button>
+      <ion-button [routerLink]="'/modulo1'">
+        <ion-icon name="arrow-back"> </ion-icon>
+        <ion-text>Volver</ion-text>
+      </ion-button>
+    </ion-buttons>
+    <ion-footer>
+      <ion-toolbar>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <span style="font-size: 12px; font-style: italic;">Developed by DrCV &reg;</span>
+          <span style="font-size: 10px; font-weight: bold;">© 2023</span>
+        </div>
+      </ion-toolbar>
+    </ion-footer>
+  </ion-toolbar>
+</ion-footer>
